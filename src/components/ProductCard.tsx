@@ -12,7 +12,9 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product }: ProductCardProps) {
-  const facebookUrl = `https://www.facebook.com/messages/t/kurosupply`;
+  // Configuración del enlace dinámico a Facebook Messenger solicitado
+  // Se incluye el slug 'kurosupply' para asegurar que el mensaje llegue al destino correcto
+  const messengerUrl = `https://m.me/kurosupply?text=Hola%20Kuro%20Supply,%20me%20interesan%20los%20${encodeURIComponent(product.name)}`;
 
   return (
     <div className="group relative bg-card border border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(253,184,19,0.1)] flex flex-col h-full">
@@ -25,6 +27,7 @@ export function ProductCard({ product }: ProductCardProps) {
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover transition-transform duration-700 group-hover:scale-105 grayscale brightness-50 opacity-40 group-hover:opacity-100 group-hover:brightness-75"
           priority={false}
+          data-ai-hint="streetwear boot"
         />
         
         {/* Etiquetas */}
@@ -44,7 +47,7 @@ export function ProductCard({ product }: ProductCardProps) {
           </Badge>
         </div>
 
-        {/* Precio destacado - Oculto según solicitud si es nulo */}
+        {/* Precio destacado - Oculto si es nulo o 0 */}
         {product.price && product.price > 0 && (
           <div className="absolute bottom-2 right-2 md:bottom-3 md:right-3 bg-black/90 px-3 py-1.5 border border-white/10 rounded-none shadow-xl">
             <span className="text-primary font-headline font-bold text-sm md:text-lg">S/. {product.price}</span>
@@ -63,7 +66,7 @@ export function ProductCard({ product }: ProductCardProps) {
         
         <div className="mt-auto pt-4 md:pt-6 flex flex-col gap-2">
           <Button 
-            onClick={() => window.open(facebookUrl, '_blank')}
+            onClick={() => window.open(messengerUrl, '_blank')}
             className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-headline font-bold uppercase text-[10px] md:text-xs h-12 md:h-14 tracking-widest rounded-none"
           >
             <Facebook className="w-4 h-4 mr-2" />

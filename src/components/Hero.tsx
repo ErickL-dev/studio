@@ -24,7 +24,7 @@ export function Hero() {
           </div>
           
           <p className="text-xl text-muted-foreground max-w-lg leading-relaxed border-l-2 border-primary pl-6">
-            Arquitectos de la estética callejera. Equipo industrial de alto contraste diseñado para el pionero urbano.
+            Tu dosis diaria de estilo. Encuentra la mejor la calidad que buscas para el día a día.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4">

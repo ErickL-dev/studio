@@ -1,0 +1,47 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Urban industrial background for hero section",
+      "imageUrl": "https://picsum.photos/seed/kuro1/1200/800",
+      "imageHint": "urban industrial"
+    },
+    {
+      "id": "shoe-1",
+      "description": "Techwear sneakers",
+      "imageUrl": "https://picsum.photos/seed/shoe1/600/600",
+      "imageHint": "techwear sneakers"
+    },
+    {
+      "id": "shoe-2",
+      "description": "High-top urban boots",
+      "imageUrl": "https://picsum.photos/seed/shoe2/600/600",
+      "imageHint": "urban boots"
+    },
+    {
+      "id": "hoodie-1",
+      "description": "Oversized black hoodie",
+      "imageUrl": "https://picsum.photos/seed/hoodie1/600/600",
+      "imageHint": "oversized hoodie"
+    },
+    {
+      "id": "tee-1",
+      "description": "Graphic streetwear tee",
+      "imageUrl": "https://picsum.photos/seed/tee1/600/600",
+      "imageHint": "streetwear tshirt"
+    },
+    {
+      "id": "accessory-1",
+      "description": "Industrial belt",
+      "imageUrl": "https://picsum.photos/seed/acc1/600/600",
+      "imageHint": "industrial belt"
+    },
+    {
+      "id": "accessory-2",
+      "description": "Techwear chest rig",
+      "imageUrl": "https://picsum.photos/seed/acc2/600/600",
+      "imageHint": "chest rig"
+    }
+  ]
+}

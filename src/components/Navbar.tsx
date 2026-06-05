@@ -18,6 +18,13 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const menuItems = [
+    { name: 'ARCHIVO', href: '#catalog' },
+    { name: 'LANZAMIENTOS', href: '#' },
+    { name: 'NOSOTROS', href: '#' },
+    { name: 'CONTACTO', href: '#' }
+  ];
+
   return (
     <nav className={cn(
       "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6",
@@ -30,19 +37,19 @@ export function Navbar() {
             <div className="w-4 h-4 border-2 border-black -rotate-45" />
           </div>
           <span className="font-headline font-bold text-2xl uppercase tracking-tighter">
-            Kuro<span className="text-primary italic">Vault</span>
+            Kuro<span className="text-primary italic">Supply</span>
           </span>
         </div>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-10">
-          {['Archive', 'Drops', 'About', 'Contact'].map((item) => (
+          {menuItems.map((item) => (
             <a 
-              key={item} 
-              href={`#${item.toLowerCase()}`}
+              key={item.name} 
+              href={item.href}
               className="text-xs font-headline font-bold uppercase tracking-[0.2em] hover:text-primary transition-colors"
             >
-              {item}
+              {item.name}
             </a>
           ))}
         </div>
@@ -72,14 +79,14 @@ export function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-background border-b border-white/10 py-8 px-6 flex flex-col gap-6 md:hidden animate-in slide-in-from-top-2 duration-300">
-          {['Archive', 'Drops', 'About', 'Contact'].map((item) => (
+          {menuItems.map((item) => (
             <a 
-              key={item} 
-              href="#" 
+              key={item.name} 
+              href={item.href} 
               className="text-xl font-headline font-bold uppercase tracking-widest border-b border-white/5 pb-4"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              {item}
+              {item.name}
             </a>
           ))}
         </div>

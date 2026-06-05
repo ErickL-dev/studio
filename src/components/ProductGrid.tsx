@@ -2,12 +2,16 @@
 "use client"
 
 import React, { useState } from 'react';
-import { PRODUCTS, Product } from '@/app/lib/products';
+import { PRODUCTS } from '@/app/lib/products';
 import { ProductCard } from '@/components/ProductCard';
-import { Button } from '@/components/ui/button';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-const CATEGORIES = ['Todos', 'Calzado', 'Ropa', 'Accesorios'] as const;
+const CATEGORIES = [
+  { label: 'Todos', value: 'Todos' },
+  { label: 'Calzado', value: 'Calzado' },
+  { label: 'Ropa', value: 'Ropa' },
+  { label: 'Accesorios', value: 'Accesorios' }
+] as const;
 
 export function ProductGrid() {
   const [activeCategory, setActiveCategory] = useState<string>('Todos');
@@ -30,12 +34,12 @@ export function ProductGrid() {
           <TabsList className="bg-white/5 border border-white/10 p-1 h-12 rounded-none">
             {CATEGORIES.map(cat => (
               <TabsTrigger 
-                key={cat}
-                value={cat}
-                onClick={() => setActiveCategory(cat)}
+                key={cat.value}
+                value={cat.value}
+                onClick={() => setActiveCategory(cat.value)}
                 className="data-[state=active]:bg-primary data-[state=active]:text-black rounded-none font-headline font-bold uppercase text-xs tracking-widest px-6"
               >
-                {cat}
+                {cat.label}
               </TabsTrigger>
             ))}
           </TabsList>
@@ -51,7 +55,7 @@ export function ProductGrid() {
       {filteredProducts.length === 0 && (
         <div className="py-20 text-center">
           <p className="text-muted-foreground font-headline uppercase tracking-widest">
-            No items found in this sector.
+            No se encontraron artículos en este sector.
           </p>
         </div>
       )}

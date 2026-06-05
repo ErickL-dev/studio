@@ -6,16 +6,15 @@ import Image from 'next/image';
 import { Product } from '@/app/lib/products';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { MessageCircle, ArrowUpRight } from 'lucide-react';
+import { Facebook, ArrowUpRight } from 'lucide-react';
 
 interface ProductCardProps {
   product: Product;
 }
 
 export function ProductCard({ product }: ProductCardProps) {
-  const messengerUrl = `https://m.me/kurosupply?text=${encodeURIComponent(
-    `Hola Kuro Supply, me interesa obtener más información sobre el producto: ${product.name}`
-  )}`;
+  // Configuración de URL de Facebook Messenger o página
+  const facebookUrl = `https://www.facebook.com/messages/t/kurosupply`;
 
   return (
     <div className="group relative bg-card border border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(253,184,19,0.1)] flex flex-col h-full">
@@ -41,7 +40,7 @@ export function ProductCard({ product }: ProductCardProps) {
               product.stockStatus === 'Agotado' ? 'border-destructive text-destructive' : 'bg-white/10 text-white'
             }`}
           >
-            {product.stockStatus}
+            {product.stockStatus === 'Disponible' ? 'DISPONIBLE' : 'AGOTADO'}
           </Badge>
         </div>
 
@@ -62,11 +61,11 @@ export function ProductCard({ product }: ProductCardProps) {
         
         <div className="mt-auto pt-4 flex gap-2">
           <Button 
-            onClick={() => window.open(messengerUrl, '_blank')}
+            onClick={() => window.open(facebookUrl, '_blank')}
             className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground font-headline font-bold uppercase text-xs h-11 tracking-widest rounded-none"
           >
-            <MessageCircle className="w-4 h-4 mr-2" />
-            CONSULTAR
+            <Facebook className="w-4 h-4 mr-2" />
+            PREGUNTAR EN FB
           </Button>
           <Button 
             variant="outline"

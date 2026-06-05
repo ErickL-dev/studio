@@ -15,22 +15,24 @@ export function Hero() {
         <div className="space-y-8">
           <div className="space-y-2">
             <h2 className="text-primary font-headline uppercase tracking-[0.3em] text-sm font-bold">
-              EST. 2024 / ARCHIVE
+              EST. 2024 / ARCHIVO
             </h2>
             <h1 className="text-6xl md:text-8xl font-headline font-bold uppercase leading-[0.9] tracking-tighter">
               Kuro <br />
-              <span className="text-primary italic">Vault</span>
+              <span className="text-primary italic">Supply</span>
             </h1>
           </div>
           
           <p className="text-xl text-muted-foreground max-w-lg leading-relaxed border-l-2 border-primary pl-6">
-            Architecting the future of street aesthetics. High-contrast industrial gear designed for the urban pioneer.
+            Arquitectos de la estética callejera. Equipo industrial de alto contraste diseñado para el pionero urbano.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4">
-            <Button size="lg" className="w-full sm:w-auto bg-primary text-black font-headline font-bold uppercase tracking-widest h-14 px-10 rounded-none group">
-              Explorar Catálogo
-              <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+            <Button size="lg" className="w-full sm:w-auto bg-primary text-black font-headline font-bold uppercase tracking-widest h-14 px-10 rounded-none group" asChild>
+              <a href="#catalog">
+                Ver Colección
+                <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+              </a>
             </Button>
             
             <div className="flex items-center gap-3">
@@ -55,7 +57,7 @@ export function Hero() {
                 <path id="circlePath" d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0" fill="transparent" />
                 <text className="font-headline font-bold uppercase tracking-[0.2em] text-[14px]">
                   <textPath href="#circlePath">
-                    Premium Streetwear • Kuro Supply Vault • Urban Industrial • Archive Drops •
+                    Premium Streetwear • Kuro Supply • Urban Industrial • Archive Drops •
                   </textPath>
                 </text>
               </svg>
@@ -65,7 +67,7 @@ export function Hero() {
               <div className="flex justify-between items-start">
                 <div className="font-headline font-bold text-4xl leading-none">01/</div>
                 <div className="text-right font-headline text-xs tracking-widest text-muted-foreground uppercase">
-                  Current Drop <br /> Phase One
+                  DROP ACTUAL <br /> FASE UNO
                 </div>
               </div>
               
@@ -75,7 +77,7 @@ export function Hero() {
               </div>
 
               <div className="flex justify-between items-end">
-                <div className="text-xs font-mono opacity-50">LOC: LIMA / PERU</div>
+                <div className="text-xs font-mono opacity-50">LOC: LIMA / PERÚ</div>
                 <div className="w-12 h-12 bg-primary flex items-center justify-center">
                   <ArrowRight className="text-black" />
                 </div>

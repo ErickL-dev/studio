@@ -16,14 +16,14 @@ export function ProductCard({ product }: ProductCardProps) {
 
   return (
     <div className="group relative bg-card border border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(253,184,19,0.1)] flex flex-col h-full">
-      {/* Imagen del Producto - Con efecto negro profundo */}
+      {/* Imagen del Producto - Con efecto negro profundo solicitado */}
       <div className="relative aspect-square overflow-hidden bg-black">
         <Image
           src={product.imageUrl}
           alt={product.name}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover transition-transform duration-700 group-hover:scale-105 grayscale opacity-60 group-hover:opacity-100"
+          className="object-cover transition-transform duration-700 group-hover:scale-105 grayscale brightness-50 opacity-40 group-hover:opacity-100 group-hover:brightness-75"
           priority={false}
         />
         
@@ -44,10 +44,12 @@ export function ProductCard({ product }: ProductCardProps) {
           </Badge>
         </div>
 
-        {/* Precio destacado */}
-        <div className="absolute bottom-2 right-2 md:bottom-3 md:right-3 bg-black/90 px-3 py-1.5 border border-white/10 rounded-none shadow-xl">
-          <span className="text-primary font-headline font-bold text-sm md:text-lg">S/. {product.price}</span>
-        </div>
+        {/* Precio destacado - Oculto según solicitud si es nulo */}
+        {product.price && product.price > 0 && (
+          <div className="absolute bottom-2 right-2 md:bottom-3 md:right-3 bg-black/90 px-3 py-1.5 border border-white/10 rounded-none shadow-xl">
+            <span className="text-primary font-headline font-bold text-sm md:text-lg">S/. {product.price}</span>
+          </div>
+        )}
       </div>
 
       {/* Información del Producto */}

@@ -15,7 +15,7 @@ export const PRODUCTS: Product[] = [
     name: 'Botines Con Punta De Acero Mujer cat',
     category: 'Calzado',
     description: 'ultimos 2',
-    imageUrl: 'https://picsum.photos/seed/black1/600/600',
+    imageUrl: 'https://scontent.flim6-2.fna.fbcdn.net/v/t39.30808-6/716829633_122099423607354893_4989234626126494438_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=aNOwI1NQjtoQ7kNvwFlYGJh&_nc_oc=AdpO73nPNk314NIxZn4ril7bqtx654j7ACpsRdc4a0Ebb0LOKyqzbxPR_rVFdc2nb2w&_nc_zt=23&_nc_ht=scontent.flim6-2.fna&_nc_gid=R5XxXfLcEEGDcThMMlkiBQ&_nc_ss=7b2a8&oh=00_Af_o4Fu41JEJ3jxM4QkrAzwCV2eYu572bgff6v0D9jaW9g&oe=6A28BF29',
     stockStatus: 'Disponible',
     tag: 'Nueva Ola'
   },

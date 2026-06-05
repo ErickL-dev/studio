@@ -87,9 +87,9 @@ export default function Home() {
               © 2026 KURO SUPPLY CO. TRUJILLO, PERÚ. TODOS LOS DERECHOS RESERVADOS.
             </p>
             <div className="flex gap-4 md:gap-6">
-              <span className="text-[10px] md:text-xs font-headline font-bold uppercase tracking-widest text-muted-foreground hover:text-primary cursor-pointer">INSTAGRAM</span>
-              <span className="text-[10px] md:text-xs font-headline font-bold uppercase tracking-widest text-muted-foreground hover:text-primary cursor-pointer">FACEBOOK</span>
-              <span className="text-[10px] md:text-xs font-headline font-bold uppercase tracking-widest text-muted-foreground hover:text-primary cursor-pointer">TIKTOK</span>
+              <a href="#" className="text-[10px] md:text-xs font-headline font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">INSTAGRAM</a>
+              <a href="https://www.facebook.com/profile.php?id=61590646799807" target="_blank" rel="noopener noreferrer" className="text-[10px] md:text-xs font-headline font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">FACEBOOK</a>
+              <a href="#" className="text-[10px] md:text-xs font-headline font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">TIKTOK</a>
             </div>
           </div>
         </div>

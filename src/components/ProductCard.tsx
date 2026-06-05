@@ -12,12 +12,12 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product }: ProductCardProps) {
-  // Configuración del enlace dinámico a Facebook Messenger
-  const messengerUrl = `https://m.me/kurosupply?text=Hola%20Kuro%20Supply,%20me%20interesan%20los%20${encodeURIComponent(product.name)}`;
+  // Configuración del enlace dinámico a Facebook Messenger usando el ID de la página
+  const messengerUrl = `https://m.me/61590646799807?text=Hola%20Kuro%20Supply,%20me%20interesan%20los%20${encodeURIComponent(product.name)}`;
 
   return (
     <div className="group relative bg-card border border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(253,184,19,0.1)] flex flex-col h-full">
-      {/* Imagen del Producto - Ahora a color */}
+      {/* Imagen del Producto - A color y sin filtros */}
       <div className="relative aspect-square overflow-hidden bg-[#0a0a0a]">
         <Image
           src={product.imageUrl}

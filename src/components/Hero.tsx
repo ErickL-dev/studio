@@ -39,14 +39,20 @@ export function Hero() {
             </Button>
             
             <div className="flex items-center gap-4">
-              <Button variant="outline" size="icon" className="w-12 h-12 rounded-none border-white/20 hover:border-primary hover:text-primary transition-all bg-background/50">
-                <Instagram className="w-5 h-5" />
+              <Button variant="outline" size="icon" className="w-12 h-12 rounded-none border-white/20 hover:border-primary hover:text-primary transition-all bg-background/50" asChild>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="w-5 h-5" />
+                </a>
               </Button>
-              <Button variant="outline" size="icon" className="w-12 h-12 rounded-none border-white/20 hover:border-primary hover:text-primary transition-all bg-background/50">
-                <Facebook className="w-5 h-5" />
+              <Button variant="outline" size="icon" className="w-12 h-12 rounded-none border-white/20 hover:border-primary hover:text-primary transition-all bg-background/50" asChild>
+                <a href="https://www.facebook.com/profile.php?id=61590646799807" target="_blank" rel="noopener noreferrer">
+                  <Facebook className="w-5 h-5" />
+                </a>
               </Button>
-              <Button variant="outline" size="icon" className="w-12 h-12 rounded-none border-white/20 hover:border-primary hover:text-primary transition-all bg-background/50">
-                <Twitter className="w-5 h-5" />
+              <Button variant="outline" size="icon" className="w-12 h-12 rounded-none border-white/20 hover:border-primary hover:text-primary transition-all bg-background/50" asChild>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <Twitter className="w-5 h-5" />
+                </a>
               </Button>
             </div>
           </div>

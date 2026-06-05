@@ -12,19 +12,18 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product }: ProductCardProps) {
-  // Configuración de URL de Facebook Messenger o página
   const facebookUrl = `https://www.facebook.com/messages/t/kurosupply`;
 
   return (
     <div className="group relative bg-card border border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(253,184,19,0.1)] flex flex-col h-full">
-      {/* Imagen del Producto */}
-      <div className="relative aspect-square overflow-hidden bg-[#151515]">
+      {/* Imagen del Producto - Con efecto negro profundo */}
+      <div className="relative aspect-square overflow-hidden bg-black">
         <Image
           src={product.imageUrl}
           alt={product.name}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0"
+          className="object-cover transition-transform duration-700 group-hover:scale-105 grayscale opacity-60 group-hover:opacity-100"
           priority={false}
         />
         

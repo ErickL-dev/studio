@@ -1,4 +1,3 @@
-
 "use client"
 
 import React from 'react';
@@ -17,28 +16,28 @@ export function ProductCard({ product }: ProductCardProps) {
   const facebookUrl = `https://www.facebook.com/messages/t/kurosupply`;
 
   return (
-    <div className="group relative bg-card border border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(253,184,19,0.1)] flex flex-col h-full">
-      {/* Product Image */}
+    <div className="group relative bg-card border border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(253,184,19,0.1)] flex flex-col h-full">
+      {/* Imagen del Producto */}
       <div className="relative aspect-square overflow-hidden bg-[#151515]">
         <Image
           src={product.imageUrl}
           alt={product.name}
           fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          className="object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0"
           priority={false}
         />
         
-        {/* Badges */}
+        {/* Etiquetas */}
         <div className="absolute top-2 left-2 md:top-3 md:left-3 flex flex-col gap-1.5 md:gap-2">
           {product.tag && (
-            <Badge variant="default" className="bg-primary text-primary-foreground font-headline text-[9px] md:text-[10px] uppercase tracking-wider px-2 py-0.5">
+            <Badge variant="default" className="bg-primary text-primary-foreground font-headline text-[9px] md:text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-none">
               {product.tag}
             </Badge>
           )}
           <Badge 
             variant={product.stockStatus === 'Disponible' ? 'secondary' : 'outline'}
-            className={`font-headline text-[9px] md:text-[10px] uppercase tracking-wider px-2 py-0.5 ${
+            className={`font-headline text-[9px] md:text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-none ${
               product.stockStatus === 'Agotado' ? 'border-destructive text-destructive' : 'bg-white/10 text-white'
             }`}
           >
@@ -46,34 +45,34 @@ export function ProductCard({ product }: ProductCardProps) {
           </Badge>
         </div>
 
-        {/* Quick Price Overlay */}
-        <div className="absolute bottom-2 right-2 md:bottom-3 md:right-3 bg-black/80 px-2 md:px-3 py-1 border border-white/10 rounded-sm">
-          <span className="text-primary font-headline font-bold text-sm md:text-base">S/. {product.price}</span>
+        {/* Precio destacado */}
+        <div className="absolute bottom-2 right-2 md:bottom-3 md:right-3 bg-black/90 px-3 py-1.5 border border-white/10 rounded-none shadow-xl">
+          <span className="text-primary font-headline font-bold text-sm md:text-lg">S/. {product.price}</span>
         </div>
       </div>
 
-      {/* Product Info */}
-      <div className="p-4 md:p-5 flex flex-col flex-1 gap-1.5 md:gap-2">
-        <h3 className="font-headline text-base md:text-lg font-bold uppercase tracking-tight leading-none group-hover:text-primary transition-colors">
+      {/* Información del Producto */}
+      <div className="p-4 md:p-6 flex flex-col flex-1 gap-2 md:gap-3">
+        <h3 className="font-headline text-lg md:text-xl font-bold uppercase tracking-tight leading-none group-hover:text-primary transition-colors">
           {product.name}
         </h3>
         <p className="text-muted-foreground text-xs md:text-sm line-clamp-2 leading-relaxed">
           {product.description}
         </p>
         
-        <div className="mt-auto pt-3 md:pt-4 flex flex-col gap-2">
+        <div className="mt-auto pt-4 md:pt-6 flex flex-col gap-2">
           <Button 
             onClick={() => window.open(facebookUrl, '_blank')}
-            className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-headline font-bold uppercase text-[10px] md:text-xs h-11 md:h-12 tracking-widest rounded-none"
+            className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-headline font-bold uppercase text-[10px] md:text-xs h-12 md:h-14 tracking-widest rounded-none"
           >
             <Facebook className="w-4 h-4 mr-2" />
             PREGUNTAR EN FB
           </Button>
           <Button 
             variant="outline"
-            className="w-full border-white/20 hover:border-primary hover:text-primary rounded-none font-headline font-bold uppercase text-[10px] md:text-xs h-11 md:h-12 tracking-widest"
+            className="w-full border-white/10 hover:border-primary hover:text-primary rounded-none font-headline font-bold uppercase text-[10px] md:text-xs h-10 md:h-12 tracking-widest bg-white/5"
           >
-            DETALLES
+            VER DETALLES
             <ArrowUpRight className="w-3.5 h-3.5 ml-2" />
           </Button>
         </div>

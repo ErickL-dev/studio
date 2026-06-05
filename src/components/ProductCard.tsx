@@ -12,20 +12,19 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product }: ProductCardProps) {
-  // Configuración del enlace dinámico a Facebook Messenger solicitado
-  // Se incluye el slug 'kurosupply' para asegurar que el mensaje llegue al destino correcto
+  // Configuración del enlace dinámico a Facebook Messenger
   const messengerUrl = `https://m.me/kurosupply?text=Hola%20Kuro%20Supply,%20me%20interesan%20los%20${encodeURIComponent(product.name)}`;
 
   return (
     <div className="group relative bg-card border border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(253,184,19,0.1)] flex flex-col h-full">
-      {/* Imagen del Producto - Con efecto negro profundo solicitado */}
-      <div className="relative aspect-square overflow-hidden bg-black">
+      {/* Imagen del Producto - Ahora a color */}
+      <div className="relative aspect-square overflow-hidden bg-[#0a0a0a]">
         <Image
           src={product.imageUrl}
           alt={product.name}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover transition-transform duration-700 group-hover:scale-105 grayscale brightness-50 opacity-40 group-hover:opacity-100 group-hover:brightness-75"
+          className="object-cover transition-transform duration-700 group-hover:scale-110"
           priority={false}
           data-ai-hint="streetwear boot"
         />
@@ -40,7 +39,7 @@ export function ProductCard({ product }: ProductCardProps) {
           <Badge 
             variant={product.stockStatus === 'Disponible' ? 'secondary' : 'outline'}
             className={`font-headline text-[9px] md:text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-none ${
-              product.stockStatus === 'Agotado' ? 'border-destructive text-destructive' : 'bg-white/10 text-white'
+              product.stockStatus === 'Agotado' ? 'border-destructive text-destructive' : 'bg-black/40 backdrop-blur-sm text-white'
             }`}
           >
             {product.stockStatus === 'Disponible' ? 'DISPONIBLE' : 'AGOTADO'}

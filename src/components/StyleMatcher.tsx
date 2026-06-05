@@ -44,7 +44,7 @@ export function StyleMatcher() {
           <Input
             value={preference}
             onChange={(e) => setPreference(e.target.value)}
-            placeholder="e.g. Night operation in rainy Lima, techwear vibe..."
+            placeholder="e.g. Night operation in rainy Trujillo, techwear vibe..."
             className="bg-background/50 border-white/10 focus-visible:ring-primary h-12"
           />
           <Button 

@@ -15,7 +15,7 @@ export function Hero() {
         <div className="space-y-6 md:space-y-8 text-center lg:text-left">
           <div className="space-y-2">
             <h2 className="text-primary font-headline uppercase tracking-[0.2em] md:tracking-[0.3em] text-[10px] md:text-sm font-bold">
-              EST. 2024 / ARCHIVO
+              EST. 2026 / ARCHIVO
             </h2>
             <h1 className="text-5xl sm:text-6xl md:text-8xl font-headline font-bold uppercase leading-[0.9] tracking-tighter">
               Kuro <br className="hidden sm:block" />
@@ -77,7 +77,7 @@ export function Hero() {
               </div>
 
               <div className="flex justify-between items-end">
-                <div className="text-xs font-mono opacity-50">LOC: LIMA / PERÚ</div>
+                <div className="text-xs font-mono opacity-50">LOC: TRUJILLO / PERÚ</div>
                 <div className="w-12 h-12 bg-primary flex items-center justify-center">
                   <ArrowRight className="text-black" />
                 </div>

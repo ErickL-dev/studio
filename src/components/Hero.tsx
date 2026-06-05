@@ -1,4 +1,3 @@
-
 "use client"
 
 import React from 'react';
@@ -7,8 +6,8 @@ import { ArrowRight, Instagram, Facebook, Twitter } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center pt-24 md:pt-20 overflow-hidden industrial-grid">
-      {/* Background Decorative Element - Adjusted for centered layout */}
+    <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center pt-24 md:pt-20 overflow-hidden nueva-ola-grid">
+      {/* Background Decorative Element */}
       <div className="absolute inset-0 bg-primary/[0.02] pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl aspect-square bg-primary/[0.03] rounded-full blur-[120px] pointer-events-none" />
       
@@ -16,7 +15,7 @@ export function Hero() {
         <div className="max-w-3xl mx-auto space-y-8 md:space-y-10 text-center">
           <div className="space-y-4">
             <h2 className="text-primary font-headline uppercase tracking-[0.3em] text-[10px] md:text-sm font-bold animate-in fade-in slide-in-from-bottom-2 duration-700">
-              EST. 2026 / ARCHIVO TRUJILLO
+              EST. 2026 / TRUJILLO PERÚ
             </h2>
             <h1 className="text-6xl sm:text-7xl md:text-9xl font-headline font-bold uppercase leading-[0.85] tracking-tighter animate-in fade-in slide-in-from-bottom-4 duration-1000">
               Kuro <br />

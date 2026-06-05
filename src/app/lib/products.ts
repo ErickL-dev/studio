@@ -1,4 +1,3 @@
-
 export interface Product {
   id: string;
   name: string;
@@ -16,7 +15,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ghost Runner X1',
     category: 'Calzado',
     price: 450,
-    description: 'Techwear silhouette with aerodynamic mesh and industrial strapping.',
+    description: 'Silueta de nueva ola con malla aerodinámica y ajuste técnico.',
     imageUrl: 'https://picsum.photos/seed/kuroshoe1/600/600',
     stockStatus: 'Disponible',
     tag: 'Drop Reciente'
@@ -26,7 +25,7 @@ export const PRODUCTS: Product[] = [
     name: 'Sector Boot 09',
     category: 'Calzado',
     price: 520,
-    description: 'Heavyweight urban combat boots featuring reinforced toe cap.',
+    description: 'Botas de combate urbano con refuerzo frontal de alta resistencia.',
     imageUrl: 'https://picsum.photos/seed/kuroshoe2/600/600',
     stockStatus: 'Disponible'
   },
@@ -35,7 +34,7 @@ export const PRODUCTS: Product[] = [
     name: 'Void Slide',
     category: 'Calzado',
     price: 180,
-    description: 'Minimalist ergonomic slides for post-urban operations.',
+    description: 'Sandalias ergonómicas minimalistas para operaciones post-urbanas.',
     imageUrl: 'https://picsum.photos/seed/kuroshoe3/600/600',
     stockStatus: 'Agotado'
   },
@@ -44,7 +43,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cyber-Kagoule Hoodie',
     category: 'Ropa',
     price: 320,
-    description: 'Oversized tactical hoodie with water-resistant coating.',
+    description: 'Sudadera táctica sobredimensionada con recubrimiento resistente al agua.',
     imageUrl: 'https://picsum.photos/seed/kurohoodie1/600/600',
     stockStatus: 'Disponible',
     tag: 'Novedad'
@@ -54,16 +53,16 @@ export const PRODUCTS: Product[] = [
     name: 'Matrix Cargo Pants',
     category: 'Ropa',
     price: 280,
-    description: 'Multi-pocket cargo system with adjustable hem drawstrings.',
+    description: 'Sistema de carga multibolsillo con dobladillo ajustable.',
     imageUrl: 'https://picsum.photos/seed/kuropants1/600/600',
     stockStatus: 'Disponible'
   },
   {
     id: 'kuro-ap-03',
-    name: 'Industrial Print Tee',
+    name: 'Nueva Ola Print Tee',
     category: 'Ropa',
     price: 120,
-    description: 'Heavyweight cotton tee with distressed Kuro Vault graphics.',
+    description: 'Camiseta de algodón pesado con gráficos exclusivos de Kuro Vault.',
     imageUrl: 'https://picsum.photos/seed/kurotee1/600/600',
     stockStatus: 'Disponible'
   },
@@ -72,7 +71,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tactical Chest Rig',
     category: 'Accesorios',
     price: 210,
-    description: 'Utility chest pack with modular attachment points.',
+    description: 'Pack de pecho utilitario con puntos de fijación modulares.',
     imageUrl: 'https://picsum.photos/seed/kuroacc1/600/600',
     stockStatus: 'Disponible'
   },
@@ -81,7 +80,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cobra Belt Gen.2',
     category: 'Accesorios',
     price: 150,
-    description: 'Quick-release buckle belt with high-tensile nylon webbing.',
+    description: 'Cinturón de liberación rápida con cinta de nylon de alta tensión.',
     imageUrl: 'https://picsum.photos/seed/kuroacc2/600/600',
     stockStatus: 'Disponible'
   },
@@ -90,7 +89,7 @@ export const PRODUCTS: Product[] = [
     name: 'Grid Beanie',
     category: 'Accesorios',
     price: 85,
-    description: 'Double-knit acrylic beanie with 3D embroidery.',
+    description: 'Gorro de punto doble con bordado 3D de alta definición.',
     imageUrl: 'https://picsum.photos/seed/kuroacc3/600/600',
     stockStatus: 'Agotado'
   }

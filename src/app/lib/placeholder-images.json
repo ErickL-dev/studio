@@ -1,45 +1,44 @@
-
 {
   "placeholderImages": [
     {
       "id": "hero-bg",
-      "description": "Urban industrial background for hero section",
+      "description": "Fondo de nueva ola de moda urbana para la sección hero",
       "imageUrl": "https://picsum.photos/seed/kuro1/1200/800",
-      "imageHint": "urban industrial"
+      "imageHint": "nueva ola urbana"
     },
     {
       "id": "shoe-1",
-      "description": "Techwear sneakers",
+      "description": "Zapatillas de nueva ola",
       "imageUrl": "https://picsum.photos/seed/shoe1/600/600",
       "imageHint": "techwear sneakers"
     },
     {
       "id": "shoe-2",
-      "description": "High-top urban boots",
+      "description": "Botas urbanas de nueva ola",
       "imageUrl": "https://picsum.photos/seed/shoe2/600/600",
       "imageHint": "urban boots"
     },
     {
       "id": "hoodie-1",
-      "description": "Oversized black hoodie",
+      "description": "Sudadera negra sobredimensionada",
       "imageUrl": "https://picsum.photos/seed/hoodie1/600/600",
       "imageHint": "oversized hoodie"
     },
     {
       "id": "tee-1",
-      "description": "Graphic streetwear tee",
+      "description": "Camiseta gráfica de nueva ola",
       "imageUrl": "https://picsum.photos/seed/tee1/600/600",
       "imageHint": "streetwear tshirt"
     },
     {
       "id": "accessory-1",
-      "description": "Industrial belt",
+      "description": "Cinturón de nueva ola",
       "imageUrl": "https://picsum.photos/seed/acc1/600/600",
       "imageHint": "industrial belt"
     },
     {
       "id": "accessory-2",
-      "description": "Techwear chest rig",
+      "description": "Rig de pecho de nueva ola",
       "imageUrl": "https://picsum.photos/seed/acc2/600/600",
       "imageHint": "chest rig"
     }

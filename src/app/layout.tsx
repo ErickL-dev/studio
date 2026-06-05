@@ -1,10 +1,9 @@
-
 import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Kuro Supply | Archivo Streetwear',
-  description: 'Catálogo urbano premium de Kuro Supply. Estética industrial, techwear moderno y lanzamientos exclusivos.',
+  description: 'Catálogo urbano premium de Kuro Supply. Nueva ola de moda, techwear moderno y lanzamientos exclusivos en Trujillo.',
 };
 
 export default function RootLayout({

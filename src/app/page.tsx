@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
@@ -18,7 +17,7 @@ export default function Home() {
         <div className="flex whitespace-nowrap animate-scroll-left">
           {[...Array(10)].map((_, i) => (
             <span key={i} className="text-black font-headline font-black uppercase text-lg md:text-xl px-4 md:px-8 flex items-center gap-2 md:gap-4">
-              Lanzamientos de 2026 <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-black rounded-full" /> Archivo Fase Uno <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-black rounded-full" /> Nueva Ola Industrial
+              Lanzamientos de 2026 <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-black rounded-full" /> Archivo Fase Uno <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-black rounded-full" /> Nueva Ola de Moda
             </span>
           ))}
         </div>
@@ -57,7 +56,7 @@ export default function Home() {
                 </span>
               </div>
               <p className="text-sm md:text-base text-muted-foreground max-w-sm">
-                Desarrollando el paisaje del streetwear industrial desde 2026. Kuro Supply es más que ropa; es un archivo técnico de la existencia urbana.
+                Desarrollando el paisaje de la nueva ola de moda desde 2026 en Trujillo. Kuro Supply es más que ropa; es un archivo técnico de la existencia urbana.
               </p>
             </div>
             
@@ -85,7 +84,7 @@ export default function Home() {
           
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
             <p className="text-[10px] md:text-xs text-muted-foreground uppercase tracking-widest text-center md:text-left">
-              © 2026 KURO SUPPLY CO. TODOS LOS DERECHOS RESERVADOS.
+              © 2026 KURO SUPPLY CO. TRUJILLO, PERÚ. TODOS LOS DERECHOS RESERVADOS.
             </p>
             <div className="flex gap-4 md:gap-6">
               <span className="text-[10px] md:text-xs font-headline font-bold uppercase tracking-widest text-muted-foreground hover:text-primary cursor-pointer">INSTAGRAM</span>

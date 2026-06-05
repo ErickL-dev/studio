@@ -7,27 +7,27 @@ import { ArrowRight, Instagram, Facebook, Twitter } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden industrial-grid">
+    <section className="relative min-h-[80vh] md:min-h-[90vh] flex items-center pt-24 md:pt-20 overflow-hidden industrial-grid">
       {/* Background Decorative Element */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 translate-x-1/4 pointer-events-none" />
+      <div className="absolute top-0 right-0 w-full md:w-1/2 h-full bg-primary/5 -skew-x-0 md:-skew-x-12 translate-x-0 md:translate-x-1/4 pointer-events-none" />
       
-      <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
-        <div className="space-y-8">
+      <div className="container mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center relative z-10">
+        <div className="space-y-6 md:space-y-8 text-center lg:text-left">
           <div className="space-y-2">
-            <h2 className="text-primary font-headline uppercase tracking-[0.3em] text-sm font-bold">
+            <h2 className="text-primary font-headline uppercase tracking-[0.2em] md:tracking-[0.3em] text-[10px] md:text-sm font-bold">
               EST. 2024 / ARCHIVO
             </h2>
-            <h1 className="text-6xl md:text-8xl font-headline font-bold uppercase leading-[0.9] tracking-tighter">
-              Kuro <br />
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-headline font-bold uppercase leading-[0.9] tracking-tighter">
+              Kuro <br className="hidden sm:block" />
               <span className="text-primary italic">Supply</span>
             </h1>
           </div>
           
-          <p className="text-xl text-muted-foreground max-w-lg leading-relaxed border-l-2 border-primary pl-6">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed border-l-0 lg:border-l-2 border-primary pl-0 lg:pl-6 mx-auto lg:mx-0">
             Tu dosis diaria de estilo. Encuentra la mejor la calidad que buscas para el día a día.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <Button size="lg" className="w-full sm:w-auto bg-primary text-black font-headline font-bold uppercase tracking-widest h-14 px-10 rounded-none group" asChild>
               <a href="#catalog">
                 Ver Colección

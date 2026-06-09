@@ -30,11 +30,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'kuro-bt-03',
-    name: 'Botines Con Punta De Acero Mujer cat',
+    name: 'Botines Con Punta De Acero Hombre cat',
     category: 'Calzado',
     description: 'ultimos 2',
-    imageUrl: 'https://picsum.photos/seed/black3/600/600',
+    imageUrl: 'https://scontent.flim6-2.fna.fbcdn.net/v/t39.30808-6/716137759_122099619333354893_7517532505204123681_n.jpg?stp=dst-jpg_tt6&cstp=mx912x1162&ctp=s912x1162&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=MU4wOdqowSsQ7kNvwG1lBQy&_nc_oc=AdrN4foEGsKwVpYUs2im0hXJmeLjqWPbG9RFcbuSgAZ-_Z3Td0_OexjdAP9I2ZRR4hk&_nc_zt=23&_nc_ht=scontent.flim6-2.fna&_nc_gid=ShgnwmpCDnVKHG_-WxHfDw&_nc_ss=7b2a8&oh=00_Af8na6Z6lAVm5hfPrZjAEMRW_fiGINogrVLBHc53New60A&oe=6A2D4AF0',
     stockStatus: 'Disponible',
-    tag: 'Trujillo Vault'
+    tag: 'Nueva Ola'
   }
 ];
